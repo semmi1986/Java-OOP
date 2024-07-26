@@ -18,21 +18,23 @@ public class Solution {
         Cat cat = new Cat("Vaska", 5);
         Dog dog = new Dog("Sharik", 4);
 
-        cat.isDogNear(dog);
-        dog.isCatNear(cat);
+//        cat.isDogNear(dog);
+//        dog.isCatNear(cat);
+        System.out.println(cat.isDogNear(dog));
+        System.out.println(dog.isCatNear(cat));
     }
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
@@ -46,15 +48,15 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Dog(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
